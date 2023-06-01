@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css"/> 
 </head>
 <body>
-    
-       
+ <canvas class="canvas"></canvas> 
+       <script></script>
  </body> 
  </html>
 
