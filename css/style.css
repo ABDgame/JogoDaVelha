@@ -3,3 +3,10 @@
      width:500px;
      height:500px;
   }
+ .canvas-holder{
+     margin:auto;
+     margin-top:20px;
+     width:100%;
+     max-width:800px;
+     background-color:#eee;
+}
