@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="css/style.css"/> 
 </head>
 <body>
- <canvas class="canvas"></canvas> 
-       <script></script>
+  <div class="canvas-holder">
+     <canvas class="canvas"></canvas>
+  </div>
+    
+ <script></script>
  </body> 
  </html>
 
