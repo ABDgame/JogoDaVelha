@@ -9,7 +9,15 @@
 <body>
   <div class="canvas-holder">
      <canvas class="canvas"></canvas>
-     <div class="cropped-images"></div>
+     <div class="cropped-images"> 
+       <div class="controls"></div>
+       <div class="images">
+           <label>
+                <input type="file" name="image" style="display:none">
+                <div class="btn">Load Imagem</div>
+          </label>
+          <div class="images"></div>
+       </div>
   </div>
     
  <script></script>
