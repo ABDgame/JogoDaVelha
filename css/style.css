@@ -2,6 +2,7 @@
      border: solid thin #888;
      width:500px;
      height:500px;
+     flex: 1;
   }
  .canvas-holder{
      margin:auto;
@@ -9,4 +10,9 @@
      width:100%;
      max-width:800px;
      background-color:#eee;
+     display:flex;
+}
+.cropped-images{
+    background-color: red;
+    flex:1;
 }
