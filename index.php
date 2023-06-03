@@ -9,6 +9,7 @@
 <body>
   <div class="canvas-holder">
      <canvas class="canvas"></canvas>
+     <div class="cropped-images"></div>
   </div>
     
  <script></script>
