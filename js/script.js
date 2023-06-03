@@ -26,3 +26,10 @@ function mouseup(e)
 {
   mouseIsDown = false;
 }
+
+function addImage()
+{
+  let img = new Image();
+  img.src = 
+  ctx.drawImage(img,0,0);
+}
