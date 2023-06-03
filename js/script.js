@@ -11,8 +11,10 @@ var mouseIsDown = false;
  
 function mousemoved(e)
 {
-  if(mouseIsDown)
-     cropped_images_div.inn("mouse moved");
+  if(mouseIsDown){
+     
+     cropped_images_div.innerHTML = 'x:${e.clientX - canvas.offsetLeft} y:${e.clientY - canvas.offsetTop}';
+  }
 }
 
 function mousedown(e)
