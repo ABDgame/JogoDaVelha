@@ -13,7 +13,7 @@
        <div class="controls"></div>
        <div class="images">
            <label>
-                <input onchange="addImage()" class="image-input" type="file" name="image" style="display:none">
+                <input onchange="addImage(this.files[0])" class="image-input" type="file" name="image" style="display:none">
                 <div class="btn">Load Imagem</div>
           </label>
           <div class="images"></div>
