@@ -27,9 +27,13 @@ function mouseup(e)
   mouseIsDown = false;
 }
 
-function addImage()
+function addImage(file)
 {
   let img = new Image();
-  img.src = document.querySelector(".image-input").files[0];
-  ctx.drawImage(img,0,0);
+  img.src = URL.createObjectURL(document.querySelector(".image-input").files[0]);
+  
+  img.onload = function()
+  {
+     ctx.drawImage(img,0,0);
+  }
 }
