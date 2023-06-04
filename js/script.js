@@ -30,6 +30,6 @@ function mouseup(e)
 function addImage()
 {
   let img = new Image();
-  img.src = 
+  img.src = document.querySelector(".image-input").files[0];
   ctx.drawImage(img,0,0);
 }
