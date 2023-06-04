@@ -30,10 +30,12 @@ function mouseup(e)
 function addImage(file)
 {
   let img = new Image();
-  img.src = URL.createObjectURL(document.querySelector(".image-input").files[0]);
-  
+  img.src = URL.createObjectURL(file);
+  img.width = canvas.width;
+  img.height = canvas.height;
   img.onload = function()
   {
+     ctx.drawImage(img,0,0, canvas.width, canvas.height);
      ctx.drawImage(img,0,0, canvas.width, canvas.height);
   }
 }
