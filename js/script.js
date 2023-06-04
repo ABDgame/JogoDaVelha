@@ -1,5 +1,8 @@
 const canvas = document.querySelector(".canvas");
 const ctx = canvas.getContext('2d');
+canvas.width = 600;
+canvas.height = 600;
+
 
 const cropped_images_div = document.querySelector(".cropped-images");
 
@@ -11,8 +14,7 @@ var mouseIsDown = false;
  
 function mousemoved(e)
 {
-  if(mouseIsDown){
-     
+  if(mouseIsDown){  
      cropped_images_div.innerHTML = 'x:${e.clientX - canvas.offsetLeft} y:${e.clientY - canvas.offsetTop}';
   }
 }
@@ -31,11 +33,10 @@ function addImage(file)
 {
   let img = new Image();
   img.src = URL.createObjectURL(file);
-  img.width = canvas.width;
-  img.height = canvas.height;
+  
   img.onload = function()
   {
-     ctx.drawImage(img,0,0, canvas.width, canvas.height);
-     ctx.drawImage(img,0,0, canvas.width, canvas.height);
+     let height = img.naturalHeigth / img.naturalWidth;
+     ctx.drawImage(img,0,0, canvas.width, height * canvas.width);
   }
 }
