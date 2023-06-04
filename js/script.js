@@ -34,6 +34,6 @@ function addImage(file)
   
   img.onload = function()
   {
-     ctx.drawImage(img,0,0);
+     ctx.drawImage(img,0,0, canvas.width, canva.height);
   }
 }
