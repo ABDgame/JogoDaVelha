@@ -11,17 +11,26 @@ canvas.addEventListener('mousedown',mousedown);
 window.addEventListener('mouseup',mouseup);
 
 var mouseIsDown = false;
- 
+var imageAdded = false;
+var mouseDownPos = {x:0,y:0};
+
 function mousemoved(e)
 {
   if(mouseIsDown){  
-     cropped_images_div.innerHTML = 'x:${e.clientX - canvas.offsetLeft} y:${e.clientY - canvas.offsetTop}';
+     //cropped_images_div.innerHTML = 'x:${e.clientX - canvas.offsetLeft} y:${e.clientY - canvas.offsetTop}';
+     let width = e.clientX - canvas.offsetleft;
+     let width = e.clientY - canvas.offsetTop;
+     ctx.fillRect(mouseDownPos.x,mouseDownPos.y,width,height);
   }
 }
 
 function mousedown(e)
 {
   mouseIsDown = true;  
+  mouseDownPos = {
+   x:e.clientX - canvas.offsetLef,
+   y:e.clientY - canvas.offsetTo
+  };
 }
 
 function mouseup(e)
@@ -36,6 +45,7 @@ function addImage(file)
   
   img.onload = function()
   {
+     imageAdded = true;
      let height = img.naturalHeigth / img.naturalWidth;
      ctx.drawImage(img,0,0, canvas.width, height * canvas.width);
   }
