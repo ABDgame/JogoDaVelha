@@ -1,7 +1,7 @@
  .canvas {
      border: solid thin #888;
-     width:500px;
-     height:500px;
+     width:600px;
+     height:600px;
      flex: 1;
   }
  .canvas-holder{
