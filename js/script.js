@@ -18,9 +18,12 @@ function mousemoved(e)
 {
   if(mouseIsDown){  
      //cropped_images_div.innerHTML = 'x:${e.clientX - canvas.offsetLeft} y:${e.clientY - canvas.offsetTop}';
-     let width = e.clientX - canvas.offsetleft;
-     let width = e.clientY - canvas.offsetTop;
+     ctx.clearReact(0,0,canvas.width,canvas.height);
+     let width = (e.clientX - canvas.offsetleft) - mouseDownPos.x;
+     let height = (e.clientY - canvas.offsetTop) - mouseDownPos.y;
+     ctx.fillStyle = "grey";
      ctx.fillRect(mouseDownPos.x,mouseDownPos.y,width,height);
+     
   }
 }
 
