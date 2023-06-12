@@ -18,16 +18,22 @@ var tempBox = {};
 
 function mousemoved(e)
 {
-  if(mouseIsDown){  
+  if(mouseIsDown){ 
+     let mouseX = (e.clientX - canvas.offsetleft);
+     let mouseY = (e.clientY - canvas.offsetTop);
+     
      if(!imageAdded)
      {
          alert("Adicione uma imagem primeiro!!!")
          return;
       }
+     if(tempBox && (mouseX > mouseDownPos.x && mouseY > mouseDownPos.y))
+     {
+      }
      ctx.clearReact(0,0,canvas.width,canvas.height);
      redraw();
-     let width = (e.clientX - canvas.offsetleft) - mouseDownPos.x;
-     let height = (e.clientY - canvas.offsetTop) - mouseDownPos.y;
+     let width = mouseX - mouseDownPos.x;
+     let height = mouseY - mouseDownPos.y;
      ctx.strokeStyle = "grey";
      ctx.strokeRect(mouseDownPos.x,mouseDownPos.y,width,height);
      //save temp box params
