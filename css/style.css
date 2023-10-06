@@ -52,4 +52,16 @@ h1
   width: 450px;
   cursor: pointer;
   margin-top: 140px;
+  backdrop-filter: blur(10px);
+  background: transparent;
+}
+.box 
+{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 2px solid #fff;
 }
