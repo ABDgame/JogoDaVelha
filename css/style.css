@@ -9,5 +9,30 @@
 }
 body
 {
-  background: url();
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1
+{
+  position: absolute;
+  top: 10px;
+  font-size: 80px;
+  color: #fff;
+  font-family:'Poppins', sans-serif;
+}
+.container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#reset
+{
+  position: absolute;
+  width: 110px;
+  height: 60px;
+
+
 }
