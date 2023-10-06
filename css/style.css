@@ -33,6 +33,23 @@ h1
   position: absolute;
   width: 110px;
   height: 60px;
-
-
+  border: 3px solid #fff;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  bottom: 25px;
+  background: transparent;
+  cursor: pointer;
+}
+#reset:hover
+{
+  transform: translateY(2px);
+}
+.game_board
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  cursor: pointer;
+  margin-top: 140px;
 }
