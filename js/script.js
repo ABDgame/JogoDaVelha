@@ -21,6 +21,7 @@ const onGameStart = ()=> {
               let winning_boxes = playerHasWon();
               winning_boxes.map(box => arrBoxes[box].style.backgroundColor = "#061941");
               winning_boxes.map(box => arrBoxes[box].style.color = "yellow");
+         
           }
             
           if(currentPlayer == "X"){
@@ -54,6 +55,7 @@ const playerHasWon = ()=>{
     }
     return false;
 }
+
 resetBtn.addEventListener('click', ()=>{
     spaces.fill(null);
 
