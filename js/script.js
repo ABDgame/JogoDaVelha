@@ -16,7 +16,11 @@ const onGameStart = ()=> {
           spaces[id] = currentPlayer;
           e.target.innerText = currentPlayer;
           if(playerHasWon() !== false){
-              result.innerText = 
+              result.innerText = `${currentPlayer} VENCEU!`;
+              resetBtn.innerText = "Replay";
+              let winning_boxes = playerHasWon();
+              winning_boxes.map(box => arrBoxes[box].style.backgroundColor = "#061941");
+              winning_boxes.map(box => arrBoxes[box].style.color = "yellow");
           }
             
           if(currentPlayer == "X"){
@@ -50,4 +54,13 @@ const playerHasWon = ()=>{
     }
     return false;
 }
+resetBtn.addEventListener('click', ()=>{
+    spaces.fill(null);
+
+    arrBoxes.forEach(box =>{
+        box.innerText ="";
+        box.style
+    })
+
+})
 onGameStart()
