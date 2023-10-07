@@ -1,3 +1,6 @@
 # JogoDaVelha
 Código Fonte
-https://www.youtube.com/watch?v=3hUY9Mg2x6g
+# Primeira Parte
+[ X ]https://www.youtube.com/watch?v=9RHrznzWt-I
+# Segunda Parte
+[  ]https://www.youtube.com/watch?v=UQqBZJN344o&t=27s
