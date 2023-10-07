@@ -59,8 +59,11 @@ resetBtn.addEventListener('click', ()=>{
 
     arrBoxes.forEach(box =>{
         box.innerText ="";
-        box.style
-    })
-
+        box.style.backgroundColor = "";
+        box.style.color = "white";
+    });
+currentPlayer = player1;
+  result.innerText = "";
+  resetBtn.innerText = "Reset";
 })
 onGameStart()
