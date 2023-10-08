@@ -16,8 +16,8 @@ const onGameStart = ()=>{
             spaces[id] = currentPlayer;
             e.target.innerText = currentPlayer;
             if(playerHasWon() !== false){
-                result.innerText = `${currentPlayer} has Won!`;
-                resetBtn.innerText = "Replay";
+                result.innerText = `${currentPlayer} VENCEU!`;
+                resetBtn.innerText = "JOGAR";
                 let winning_boxes = playerHasWon();
                 winning_boxes.map(box => arrBoxes[box].style.backgroundColor = "#061941");
                 winning_boxes.map(box => arrBoxes[box].style.color = "yellow");
@@ -67,6 +67,6 @@ resetBtn.addEventListener('click', ()=>{
 
     currentPlayer = player1;
     result.innerText = "";
-    resetBtn.innerText = "Reset";
+    resetBtn.innerText = "JOGAR";
 })
 onGameStart()
