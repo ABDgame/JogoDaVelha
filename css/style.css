@@ -12,56 +12,54 @@ body
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1
-{
-  position: absolute;
-  top: 10px;
-  font-size: 80px;
-  color: #fff;
-  font-family:'Poppins', sans-serif;
+h1{
+    position: absolute;
+    top: 10px;
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.container 
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-#reset
-{
-  position: absolute;
-  width: 110px;
-  height: 60px;
-  border: 3px solid #fff;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  bottom: 25px;
-  background: transparent;
-  cursor: pointer;
+#reset{
+    position: absolute;
+    width: 110px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    bottom: 25px;
+    background: transparent;
+    cursor: pointer;
 }
-#reset:hover
-{
-  transform: translateY(2px);
+
+#reset:hover{
+    transform: translateY(2px);
 }
-.game_board
-{
-  display: flex;
-  flex-wrap: wrap;
-  width: 450px;
-  cursor: pointer;
-  margin-top: 140px;
-  backdrop-filter: blur(10px);
-  background: transparent;
+
+.game_board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    cursor: pointer;
+    margin-top: 140px;
+    backdrop-filter: blur(10px);
+    background: transparent;
 }
-.box 
-{
-  height: 150px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  border: 2px solid #fff;
+
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 2px solid #fff;
 }
